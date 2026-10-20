@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Signup</h2>
+<form method="post">
+  <input name="full_name" placeholder="Poora naam" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="phone_number" placeholder="Phone (10 digit)" required>
+  <input name="password" type="password" placeholder="Password (min 6)" required>
+  <button type="submit">Account banao</button>
+</form>
+<p>Pehle se account hai? <a href="{{ url_for('login') }}">Login</a></p>
+{% endblock %}
